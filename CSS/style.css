@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+:root{
+  --cor-fundo: #1A374D;
+  --cor-clara: #B1D0E0;
+  --cor-secundaria: #406882;
+  --cor-cards: #6998AB;
+
+}
+
+body{
+    font-family: 'Sarala', sans-serif;    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+}
+
+/* CABEÇALHO */
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo h2{
+    color: var(--cor-clara);
+    font-size: 30px;
+}
+
+.logo span{
+    color: var(--cor-secundaria);
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.conteudo-primario{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.titulo-principal{
+    font-family: 'Righteous', cursive;
+    color: var(--cor-clara);
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 55px;
+}
+
+.descricao-titulo{
+    color: var(--cor-clara);
+    font-size: 25px;
+    line-height: 35px;
+    margin:-16px 0px 40px 0px;
+}
+
+.area-conteudo a{
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    padding: 15px 60px;
+    color: var(--cor-clara);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.imagem-conteudo img{
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid var(--cor-clara);
+    padding-top: 24px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--cor-clara);
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-lista{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--cor-clara);
+    padding-bottom: 24px;
+}
+
+/* Minhas habilidades*/
+
+.conteudo-skills{
+    background-color: var(--cor-secundaria);
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.skills-titulo{
+    font-family: 'Righteous', cursive;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--cor-clara);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;    
+}
+
+.conteudo-skills section{
+    display: flex;
+    justify-content: center;
+}
+
+/*
+
+.lista-skills{
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    
+}
+
+.hard-skills label,.soft-skills label{   
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color:var(--cor-clara);
+    padding-bottom: 10px;
+    
+}
+
+.hard-skills li,.soft-skills li{
+    font-family: 'Sarala', sans-serif;
+    color: var(--cor-clara);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+} */ 
+
+.hard-skills{
+    display: inline-flex;
+    font-family: 'sarala' sans-serif;
+    color: var(--cor-clara);
+    align-items: center;
+    gap: -101px;
+}
+
+.level-skill li{
+    height: 12px;
+    width: 12px;
+    border: 1px solid var(--cor-clara);
+    border-radius: 50%;
+    display: inline-flex;
+}
+.level-skill li:nth-child(-n+4){
+    background-color: var(--cor-fundo);
+}
+
+
+
+/* FORMULARIO */
+
+.conteudo-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.titulo-formulario{
+    color: var(--cor-clara);
+    text-align: center;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+}
+
+.formulario input{
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-family: 'Sarala', sans-serif;  
+}
+
+input::placeholder{
+    color: #000;
+    text-transform: uppercase;
+}
+
+textarea{
+    display: flex;
+    font-family: 'Sarala', sans-serif;  
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+textarea::placeholder{
+    color: #000;
+    text-transform: uppercase;
+}
+
+input[type="submit"]{
+    font-family: 'Sarala', sans-serif;    
+    font-weight: 700;
+    background-color: var(--cor-secundaria);
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--cor-clara);
+    height: 55px;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.social-titulo{
+    color: var(--cor-clara);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
