@@ -8,6 +8,13 @@
 
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
 body{
     font-family: 'Sarala', sans-serif;    margin: 0;
     padding: 0;
@@ -89,7 +96,7 @@ header{
 }
 
 .conteudo-secundario-lista{
-    font-family: 'Sarala', sans-serif;
+
     font-weight: 300;
     font-size: 18px;
     color: var(--cor-clara);
@@ -100,7 +107,7 @@ header{
 
 .conteudo-skills{
     background-color: var(--cor-secundaria);
-    height: 500px;
+    height: 450px;
     margin-bottom: 100px;
 }
 
@@ -114,54 +121,91 @@ header{
     padding-top: 30px;    
 }
 
-.conteudo-skills section{
-    display: flex;
-    justify-content: center;
+.skills{
+    width: 50%;
+    float: left;
+    padding: 20px;
 }
 
-/*
-
-.lista-skills{
-    display: flex;
-    justify-content: center;
-    gap: 500px;
-    
-}
-
-.hard-skills label,.soft-skills label{   
+.subtitulo-skills{
     font-family: 'Righteous', cursive;
-    font-size: 30px;
-    font-weight: 400;
-    color:var(--cor-clara);
-    padding-bottom: 10px;
-    
-}
-
-.hard-skills li,.soft-skills li{
-    font-family: 'Sarala', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
     color: var(--cor-clara);
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 36px;
-} */ 
-
-.hard-skills{
-    display: inline-flex;
-    font-family: 'sarala' sans-serif;
-    color: var(--cor-clara);
-    align-items: center;
-    gap: -101px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;   
 }
 
-.level-skill li{
-    height: 12px;
-    width: 12px;
-    border: 1px solid var(--cor-clara);
-    border-radius: 50%;
-    display: inline-flex;
+.borda-barra{
+    border-radius: 4px 4px 100px 4px;
+
 }
-.level-skill li:nth-child(-n+4){
+
+
+.campo-barra{
+    background-color: var(--cor-cards);
+    height: 15px;
+    margin-top: 50px;
+    margin: 20px;
+}
+
+.campo-progresso{
     background-color: var(--cor-fundo);
+    height: 15px;
+    border-radius: 2px 4px 4px 2px;
+}
+
+/* HARD SKILLS */
+
+.logica-progresso{
+    width: 85%;
+}
+
+.html-progresso{
+    width: 70%;
+}
+
+.js-progresso{
+    width: 55%;
+}
+
+.react-progresso{
+    width: 15%;
+}
+.php-progresso{
+    width: 10%;
+}
+
+/* SOFT SKILL */
+
+.trabalho-progresso{
+    width: 95%;
+}
+
+.aprendizado-progresso{
+    width: 85%;
+}
+
+.ouvir-progresso{
+    width: 90%;
+}
+
+.proatividade-progresso{
+    width: 70%;
+}
+
+.criatividade-progresso{
+    width:65%;
+}
+
+.titulo-progresso{
+    padding-left: 15px;
+    color: var(--cor-clara);
+    margin: 0;
+    font-size: 10px;
+    text-transform: uppercase;    
+
 }
 
 
@@ -214,8 +258,7 @@ textarea::placeholder{
     text-transform: uppercase;
 }
 
-input[type="submit"]{
-    font-family: 'Sarala', sans-serif;    
+input[type="submit"]{  
     font-weight: 700;
     background-color: var(--cor-secundaria);
     text-transform: uppercase;
@@ -224,6 +267,7 @@ input[type="submit"]{
     height: 55px;
     cursor: pointer;
 }
+
 
 footer{
     margin-top: 100px;
@@ -242,4 +286,22 @@ footer{
     gap: 15px;
     margin-bottom: 20px;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .imagem-conteudo{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .conteudo-skills{
+        height: 700px;
+    }
+    
+    .skills{
+        width: 100%;
+    }
+
 }
